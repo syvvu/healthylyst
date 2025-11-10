@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 50%, #fef3c7 100%);
+  color: #0c4a6e;
+  overflow-x: hidden;
+}
+
+/* Ocean Breeze Theme Variables */
+:root {
+  --ocean-sky: #e0f2fe;
+  --ocean-light: #f0f9ff;
+  --ocean-blue: #0ea5e9;
+  --ocean-deep: #0c4a6e;
+  --ocean-mist: #bae6fd;
+  --ocean-wave: #7dd3fc;
+  --ocean-foam: #d1fae5;
+  --ocean-coral: #fda4af;
+  --ocean-sand: #fef3c7;
+  --ocean-sunset: #f59e0b;
+  --ocean-lavender: #c7d2fe;
+  --ocean-text: #0c4a6e;
+  --ocean-text-light: #334155;
+  --ocean-card: #ffffff;
+  --ocean-border: #bae6fd;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Toast animation */
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s ease-out;
+}
+
+/* Custom scrollbar - Ocean Theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ocean-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ocean-mist);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ocean-blue);
+}
+
+/* Focus styles - Ocean Theme */
+*:focus-visible {
+  outline: 2px solid var(--ocean-blue);
+  outline-offset: 2px;
+}
