@@ -2,6 +2,9 @@
 
 A sophisticated health data aggregation and analysis platform that integrates multiple data sources to provide comprehensive insights into your wellness journey.
 
+## Video Demo Link
+https://youtu.be/qgKR6bc6vF0
+
 ## 🏆 Hackathon Submission Highlights
 
 This application demonstrates **excellence in multi-source data integration** and **AI-powered health insights** by:
